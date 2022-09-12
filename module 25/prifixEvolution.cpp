@@ -182,10 +182,11 @@ int postfixEvolution(string chk)
 int main()
 {
     string chk="(7+(4*5))-(2+0)";
+    cout<<infixToPrifix("9+3*(8/4)")<<endl;
     cout<<infixTopostFix(chk)<<endl;
 
-    cout<<prefixEvolution(infixToPrifix(chk))<<endl;
+    cout<<prefixEvolution("+9*3/84")<<endl;
     // cout<<prefixEvolution("-+7*45+20");
-    cout<<postfixEvolution(infixTopostFix(chk));
+   // cout<<postfixEvolution(infixTopostFix(chk));
 
 }
