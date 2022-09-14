@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include"MyQueue.h"
+#include"Zilani_Queue.h"
 using namespace std;
 int find(Queue<int> &st,int k)
 {

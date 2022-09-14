@@ -5,14 +5,17 @@ class Node{
 public:
 n value;
 Node *Next;
+Node*Prev;
 public:
     Node(n val){
     this->value=val;
     Next=NULL;
+    Prev=NULL;
     }
 };
 template <typename q>
 class Queue{
+    public:
 Node<q> *front;
 Node<q> *rear;
 public:
@@ -34,20 +37,20 @@ return;
 }
 
 ///////////////////////////pop///////////////////
-q pop(){
-    q chk;
+void pop(){
+
 if(front==NULL){
         cout<<"the queue is underflow | There is no value in the queue"<<endl;
-    return chk;
+   // return chk;
 }
 Node<q> *delNode=front;
 front=front->Next;
 if(front==NULL){
     rear=NULL;
 }
-chk=delNode->value;
+//chk=delNode->value;
 delete delNode;
-return chk;
+
 
 }
 /////////////////////////////////////////empty/////////

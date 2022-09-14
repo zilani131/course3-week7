@@ -19,12 +19,13 @@ class Stack
 public:
     Node<st>*head;
     Node<st>*top;
-    int ctn=0;
+    int ctn;
 public:
     Stack()
     {
         head=NULL;
         top=NULL;
+        ctn=0;
 
     }
 //////////////////push operation
@@ -44,7 +45,7 @@ public:
         return;
     }
 //////////////////////////pop operation /////////////////////
-    st pop()
+    void pop()
     {
         st val;
         Node<st>*delNode;
@@ -68,7 +69,7 @@ public:
         val=delNode->value;
         delete delNode;
         ctn--;
-        return val;
+      //  return val;
     }
 /////////////////////////status checking
     bool empty()

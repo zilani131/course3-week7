@@ -20,6 +20,7 @@ int precisionCalc(char s)
         return -1;
     }
 }
+//(2+3)*4
 string infixToPrifix(string chk)
 {
     Stack<char> st;
@@ -182,7 +183,7 @@ int postfixEvolution(string chk)
 int main()
 {
     string chk="(7+(4*5))-(2+0)";
-    cout<<infixToPrifix("9+3*(8/4)")<<endl;
+    cout<<infixToPrifix("(2+3)*4")<<endl;
     cout<<infixTopostFix(chk)<<endl;
 
     cout<<prefixEvolution("+9*3/84")<<endl;
